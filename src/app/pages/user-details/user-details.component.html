@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div *ngIf="userDetails" class="card">
+        <img class="card-img-top" [src]="userDetails.picture.large" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ userDetails.name.first }} {{ userDetails.name.last }}</h5>
+          <p class="card-text">{{ userDetails.email }}</p>
+          <p class="card-text">{{ userDetails.location.city }}, {{ userDetails.location.state }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-6 offset-md-3">
+      <button routerLink="/users" class="btn btn-primary">Voltar</button>
+    </div>
+  </div>
+</div>
