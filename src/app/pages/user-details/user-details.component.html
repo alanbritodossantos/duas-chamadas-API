@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
       <div *ngIf="userDetails" class="card">
-        <img class="card-img-top" [src]="userDetails.picture.large" alt="Card image cap">
+        <img class="card-img-top rounded-circle" [src]="userDetails.picture.large" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">{{ userDetails.name.first }} {{ userDetails.name.last }}</h5>
-          <p class="card-text">{{ userDetails.email }}</p>
-          <p class="card-text">{{ userDetails.location.city }}, {{ userDetails.location.state }}</p>
+          <h5 class="card-title text-center">{{ userDetails.name.first }} {{ userDetails.name.last }}</h5>
+          <p class="card-text text-center">{{ userDetails.email }}</p>
+          <p class="card-text text-center">{{ userDetails.location.city }}, {{ userDetails.location.state }}</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,22 @@
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.card-title,
+.card-text {
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+}

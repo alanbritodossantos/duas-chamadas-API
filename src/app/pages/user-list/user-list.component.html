@@ -1,4 +1,4 @@
-<table>
+<table class="user-table">
   <thead>
     <tr>
       <th>Nome</th>
@@ -15,7 +15,7 @@
       <td>{{ user.location.city }}</td>
       <td>{{ user.location.state }}</td>
       <td>
-        <button (click)="selectUser(user)">Selecionar</button>
+        <button (click)="selectUser(user)" class="btn btn-primary btn-sm">Selecionar</button>
       </td>
     </tr>
   </tbody>
